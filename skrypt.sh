@@ -9,10 +9,12 @@
 	apt-get install -y vim tree nmon tmux gparted git
 
 
-#Kopia i zmiana uprawnień, grupy, oraz właściciela pliku konfiguracyjnego vim'a
+#Plik konfiguracyjny vim'a
 
 	#Kopia
-	cp ./.vimrc ~/
+	cp ./vimrc ~/
+	#zmiana nazwy
+	mv ~/vimrc ~/.vimrc
 	#Zmiana uprawnień
 	chmod 664 ~/.vimrc
 	#Zmiana właściciela
@@ -42,6 +44,6 @@
 
 
 
-#Wersja: 1.2
+#Wersja: 1.3
 #Autor: Michał Pikusa
 #Licencja: MIT
