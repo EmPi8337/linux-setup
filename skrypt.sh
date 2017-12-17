@@ -44,10 +44,8 @@
 
 #Pobranie oraz konfiguracja menadżera plugin'ów do vim"a
 
-	#Pobranie plugin'u
+	#Pobranie menadżera
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	#Instalacja plugin'u
-	vim +BundleInstall
 
 
 
