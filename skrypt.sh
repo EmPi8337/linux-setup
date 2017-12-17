@@ -42,8 +42,15 @@
 	#usunięcie plików
 	rm ~/Pulpit/*
 
+#Pobranie oraz konfiguracja menadżera plugin'ów do vim"a
+
+	#Pobranie plugin'u
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	#Instalacja plugin'u
+	vim +BundleInstall
 
 
-#Wersja: 1.3
+
+#Wersja: 1.4
 #Autor: Michał Pikusa
 #Licencja: MIT
