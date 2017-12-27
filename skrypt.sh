@@ -23,6 +23,20 @@
 	chgrp egzamin ~/.vimrc
 
 
+#Plik konfiguracyjny bash
+
+	#kopia
+	cp ./bashrc ~/
+	#zmiana nazwy
+	mv ~/bashrc ~/.bashrc
+	#zmiana uprawnień
+	chmod 644 ~/.bashrc 
+	#zmiana właściciela
+	chown egzamin ~/.bashrc
+	#zmiana grupy
+	chgrp egzamin ~/.bashrc
+
+
 #Aktualizacja wszystkich pakietów
 	apt-get upgrade -y
 
@@ -35,20 +49,19 @@
 	dpkg --install atom-amd64.deb
 
 
-#Usunięcie początkowych plików i katalogów na pulpicie
-
-	#usunięcie katalogów
-	rm -r ~/Pulpit/*
-	#usunięcie plików
-	rm ~/Pulpit/*
-
 #Pobranie oraz konfiguracja menadżera plugin'ów do vim"a
 
 	#Pobranie menadżera
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	vim +BundleInstall +qall
+
+
+#Czynności końcowe
+	bash
+	clear
 
 
 
-#Wersja: 1.4
+#Wersja: 1.5
 #Autor: Michał Pikusa
 #Licencja: MIT

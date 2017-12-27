@@ -5,7 +5,7 @@ set autoindent
 set number
 set hlsearch
 set incsearch
-set coursorline
+set cursorline
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
